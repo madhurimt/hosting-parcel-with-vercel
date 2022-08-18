@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calm Minds</title>
+    <link rel="stylesheet" href="breathing.css" />
+  </head>
+  <body>
+    <div class="input">
+      <label>Select Breaths</label>
+      <select class="input-breaths">
+        <option value="3">3 Breaths</option>
+        <option value="5">5 Breaths</option>
+        <option value="7">7 Breaths</option>
+      </select>
+    </div>
+    <div class="circles">
+      <div class="circle-outside"></div>
+      <div class="circle-inside"></div>
+    </div>
+    <p class="breaths">
+      Remaining Breaths: <span class="remaining-breaths">3</span>
+    </p>
+    <p class="instructions">Are you ready to start breathing</p>
+    <button class="start">Start</button>
+
+    <audio src="audio/breathin.mp3" id="breathein"></audio>
+    <audio src="audio/hold.mp3" id="hold"></audio>
+    <audio src="audio/breatheout.mp3" id="breatheout"></audio>
+
+    <script src="breathing.js"></script>
+  </body>
+</html>
